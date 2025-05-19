@@ -1,0 +1,148 @@
+/* Общие стили для страниц брифов */
+.references-gallery .card-img-top {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f8f9fc;
+}
+
+.references-gallery .card-img-top img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.references-gallery .file-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для селектора зон и аккордеона */
+.zone-selector {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.zone-card {
+    transition: all 0.3s ease;
+}
+
+.zone-card .card-header {
+    background-color: #f8f9fc;
+    cursor: pointer;
+}
+
+.zone-card .card-header:hover {
+    background-color: #eaecf4;
+}
+
+.zone-card .btn-link {
+    color: #4e73df;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+}
+
+.zone-card .btn-link:hover {
+    text-decoration: none;
+}
+
+/* Стили для навигации по категориям вопросов */
+#answers-content .nav-pills .nav-link {
+    border-radius: 0.35rem;
+    font-weight: 500;
+    color: #6e707e;
+    background-color: #f8f9fc;
+    margin-right: 5px;
+    transition: all 0.2s;
+}
+
+#answers-content .nav-pills .nav-link:hover {
+    background-color: #eaecf4;
+}
+
+#answers-content .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #4e73df;
+}
+
+/* Стили для таблиц с ответами */
+#answers-content .table-bordered {
+    border: 1px solid #e3e6f0;
+}
+
+#answers-content .table-bordered thead th {
+    background-color: #f8f9fc;
+    border-bottom: 2px solid #e3e6f0;
+    font-weight: 600;
+}
+
+#answers-content .table-bordered td {
+    vertical-align: middle;
+    border: 1px solid #e3e6f0;
+}
+
+/* Улучшение отображения прогресс-бара */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #eaecf4;
+}
+
+.progress-bar {
+    border-radius: 5px;
+}
+
+/* Улучшение отображения для мобильных устройств */
+@media (max-width: 768px) {
+    #answers-content .nav-pills {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+    
+    #answers-content .nav-pills .nav-link {
+        white-space: nowrap;
+    }
+    
+    .table-responsive {
+        max-width: 100%;
+    }
+    
+    .zone-selector select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Улучшения для вкладок */
+#briefTabs .nav-link {
+    cursor: pointer;
+}
+
+/* Отладочная панель */
+.debug-panel {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px dashed #ced4da;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.debug-panel pre {
+    background-color: #e9ecef;
+    padding: 5px;
+    border-radius: 3px;
+    max-height: 200px;
+    overflow: auto;
+}
